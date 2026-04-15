@@ -96,6 +96,8 @@ The flow table of the OpenFlow switch (s1) was verified using:
 
 sudo ovs-ofctl dump-flows s1
 
+<img width="1207" height="621" alt="image" src="https://github.com/user-attachments/assets/ff7a5e1a-357d-4b7c-a791-88e775313d03" />
+
 This confirms:
 - Flow rules are successfully installed by the controller
 - Match–action logic is implemented using OpenFlow
@@ -107,6 +109,8 @@ This confirms:
 
 Command used:
 mininet> h1 ping h2
+
+<img width="979" height="377" alt="image" src="https://github.com/user-attachments/assets/54381bf0-5f01-4e74-896a-58cc87fdabce" />
 
 Observed Results:
 - 0% packet loss
@@ -124,6 +128,9 @@ Commands used:
 mininet> h2 iperf -s &
 mininet> h1 iperf -c h2 -t 20
 
+<img width="1005" height="313" alt="image" src="https://github.com/user-attachments/assets/152318b7-9dde-44b2-a5e4-599f8310f017" />
+
+
 Observed Results:
 - Bandwidth ≈ 60–150 Mbps
 
@@ -139,6 +146,8 @@ The POX controller logs display:
 
 Port X -> Bandwidth: XX Mbps | Utilization: XX%
 
+<img width="1101" height="493" alt="image" src="https://github.com/user-attachments/assets/0ae8986d-9e73-4911-a3cf-32f15c6a957e" />
+
 This confirms:
 - Bandwidth is calculated using byte statistics
 - Utilization is computed relative to link capacity (1 Gbps)
@@ -146,7 +155,7 @@ This confirms:
 
 ---
 
-### 📌 Summary
+### Summary
 
 The above results confirm:
 - Successful SDN controller operation
