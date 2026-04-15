@@ -25,7 +25,6 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 * **Python** – Backend logic and controller implementation
 
 ##📊 Network Topology
-
                 +------------------+
                 |   POX Controller |
                 |   (Remote Ctrl)  |
