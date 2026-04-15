@@ -31,13 +31,13 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 
 ## 🧠 Description
 
-*POX Controller manages the network using OpenFlow
+* POX Controller manages the network using OpenFlow
 
-*Switch (s1) connects all hosts
+* Switch (s1) connects all hosts
 
-*Hosts (h1, h2, h3) generate traffic
+* Hosts (h1, h2, h3) generate traffic
 
-Communication between controller and switch uses TCP port 6633
+* Communication between controller and switch uses TCP port 6633
 
 ---
 
