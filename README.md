@@ -37,7 +37,8 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 
 *Hosts (h1, h2, h3) generate traffic
 
-*Communication between controller and switch uses TCP port 6633
+Communication between controller and switch uses TCP port 6633
+
 ---
 
 ## ⚙️ Project Setup
