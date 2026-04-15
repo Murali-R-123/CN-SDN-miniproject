@@ -1,6 +1,6 @@
-# 📊 Network Utilization Monitor (SDN Project)
+#  Network Utilization Monitor (SDN Project)
 
-## 🧠 Overview
+##  Overview
 
 This project implements a **Network Utilization Monitor** using **Software Defined Networking (SDN)** concepts. It measures and displays bandwidth usage across the network in real time.
 
@@ -8,7 +8,7 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * Measure network traffic using byte counters
 * Estimate bandwidth utilization between hosts
@@ -17,19 +17,19 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 
 ---
 
-## 🏗️ Technologies Used
+##  Technologies Used
 
 * **Mininet** – Network emulation
 * **POX Controller** – SDN controller
 * **Open vSwitch (OVS)** – Virtual switch
 * **Python** – Backend logic and controller implementation
 
-##📊 Network Topology
+## Network Topology
 
 <img width="563" height="459" alt="image" src="https://github.com/user-attachments/assets/d780ad5e-a87b-4e13-9191-f2c03aa4cfd0" />
 
 
-## 🧠 Description
+##  Description
 
 * POX Controller manages the network using OpenFlow
 
@@ -41,7 +41,7 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 
 ---
 
-## ⚙️ Project Setup
+##  Project Setup
 
 ### 1. Start Mininet Topology
 
@@ -68,7 +68,7 @@ sudo ovs-ofctl dump-flows s1
 
 ---
 
-## 🔍 How It Works
+##  How It Works
 
 1. Hosts generate traffic in the Mininet topology
 2. Switches maintain flow statistics (packet count, byte count)
@@ -78,7 +78,7 @@ sudo ovs-ofctl dump-flows s1
 
 ---
 
-## 📈 Output
+## Output
 
 * Displays bandwidth usage between hosts
 * Shows packet and byte counts
@@ -86,7 +86,7 @@ sudo ovs-ofctl dump-flows s1
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 CN SDN miniproject/
@@ -98,7 +98,7 @@ CN SDN miniproject/
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 * Add graphical visualization of network usage
 * Implement real-time dashboard
@@ -107,13 +107,13 @@ CN SDN miniproject/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **R Muralidharan**
 
 ---
 
-## 📌 Conclusion
+##  Conclusion
 
 This project demonstrates how SDN can be used to monitor and analyze network utilization efficiently by leveraging centralized control and real-time statistics.
 
