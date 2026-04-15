@@ -87,7 +87,7 @@ CN SDN miniproject/
 │── Output Screenshots/      # Screenshots of results
 │── README.md                # Project documentation
 ```
-## 📸 Proof of Execution
+##  Proof of Execution
 
 The following screenshots/logs demonstrate the correct functioning of the SDN Network Utilization Monitor.
 
