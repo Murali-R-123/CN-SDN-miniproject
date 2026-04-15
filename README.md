@@ -124,6 +124,8 @@ This demonstrates:
 
 ### 🔹 Iperf Test (High Traffic Scenario)
 
+<img width="1127" height="518" alt="image" src="https://github.com/user-attachments/assets/978be8d9-c3a0-4f90-acde-fad40a37ad11" />
+
 Commands used:
 mininet> h2 iperf -s &
 mininet> h1 iperf -c h2 -t 20
