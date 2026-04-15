@@ -78,14 +78,6 @@ sudo ovs-ofctl dump-flows s1
 
 ---
 
-## Output
-
-* Displays bandwidth usage between hosts
-* Shows packet and byte counts
-* Helps analyze network performance
-
----
-
 ## Project Structure
 
 ```
@@ -95,6 +87,72 @@ CN SDN miniproject/
 │── Output Screenshots/      # Screenshots of results
 │── README.md                # Project documentation
 ```
+## 📸 Proof of Execution
+
+The following screenshots/logs demonstrate the correct functioning of the SDN Network Utilization Monitor.
+
+### 🔹 Flow Table Entries
+The flow table of the OpenFlow switch (s1) was verified using:
+
+sudo ovs-ofctl dump-flows s1
+
+This confirms:
+- Flow rules are successfully installed by the controller
+- Match–action logic is implemented using OpenFlow
+- Different protocol flows (ARP, ICMP, IPv6) are handled
+
+---
+
+### 🔹 Ping Test (Low Traffic Scenario)
+
+Command used:
+mininet> h1 ping h2
+
+Observed Results:
+- 0% packet loss
+- Average latency ≈ 4 ms
+
+This demonstrates:
+- Basic connectivity between hosts
+- Low traffic scenario with minimal bandwidth usage
+
+---
+
+### 🔹 Iperf Test (High Traffic Scenario)
+
+Commands used:
+mininet> h2 iperf -s &
+mininet> h1 iperf -c h2 -t 20
+
+Observed Results:
+- Bandwidth ≈ 60–150 Mbps
+
+This demonstrates:
+- High traffic generation in the network
+- Proper data transfer between hosts
+
+---
+
+### 🔹 Controller Output (Bandwidth & Utilization)
+
+The POX controller logs display:
+
+Port X -> Bandwidth: XX Mbps | Utilization: XX%
+
+This confirms:
+- Bandwidth is calculated using byte statistics
+- Utilization is computed relative to link capacity (1 Gbps)
+- Network usage is monitored in real time
+
+---
+
+### 📌 Summary
+
+The above results confirm:
+- Successful SDN controller operation
+- Accurate bandwidth and utilization monitoring
+- Proper handling of both low and high traffic scenarios
+- Correct installation of OpenFlow flow rules
 
 ---
 
