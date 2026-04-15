@@ -25,24 +25,9 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 * **Python** – Backend logic and controller implementation
 
 ##📊 Network Topology
-                +------------------+
-                |   POX Controller |
-                |   (Remote Ctrl)  |
-                +--------+---------+
-                         |
-                         | OpenFlow (TCP 6633)
-                         |
-                 +-------+-------+
-                 |     Switch    |
-                 |      s1       |
-                 +---+---+---+---+
-                     |   |   |
-         ------------    |    ------------
-        |                |               |
-+-------+-------+ +------+-------+ +-----+-------+
-|     Host h1   | |    Host h2   | |   Host h3   |
-|   IP:10.0.0.1 | |  IP:10.0.0.2 | | IP:10.0.0.3|
-+---------------+ +--------------+ +-------------+
+
+<img width="563" height="459" alt="image" src="https://github.com/user-attachments/assets/d780ad5e-a87b-4e13-9191-f2c03aa4cfd0" />
+
 
 🧠 Description
 POX Controller manages the network using OpenFlow
