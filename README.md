@@ -24,6 +24,32 @@ The system collects flow statistics from switches, estimates bandwidth consumpti
 * **Open vSwitch (OVS)** – Virtual switch
 * **Python** – Backend logic and controller implementation
 
+##📊 Network Topology
+
+                +------------------+
+                |   POX Controller |
+                |   (Remote Ctrl)  |
+                +--------+---------+
+                         |
+                         | OpenFlow (TCP 6633)
+                         |
+                 +-------+-------+
+                 |     Switch    |
+                 |      s1       |
+                 +---+---+---+---+
+                     |   |   |
+         ------------    |    ------------
+        |                |               |
++-------+-------+ +------+-------+ +-----+-------+
+|     Host h1   | |    Host h2   | |   Host h3   |
+|   IP:10.0.0.1 | |  IP:10.0.0.2 | | IP:10.0.0.3|
++---------------+ +--------------+ +-------------+
+
+🧠 Description
+POX Controller manages the network using OpenFlow
+Switch (s1) connects all hosts
+Hosts (h1, h2, h3) generate traffic
+Communication between controller and switch uses TCP port 6633
 ---
 
 ## ⚙️ Project Setup
